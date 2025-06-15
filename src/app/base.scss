@@ -22,12 +22,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  width: 100%;
-}
-
-#app {
-  height: 100vh;
-  width: 100vw;
+  background-color: #ffffff;
 }
 
 @supports (font-variation-settings: normal) {
@@ -39,11 +34,15 @@ body {
 
 body {
   font-size: 100%;
-  background-color: #f8fafc;
 }
 
 :focus-visible {
   outline: none;
+}
+
+#app {
+  height: 100vh;
+  width: 100vw;
 }
 
 @mixin light-theme {
@@ -73,7 +72,6 @@ body {
 @layer base {
   :root {
     opacity: 1;
-    @include light-theme;
   }
 }
 
