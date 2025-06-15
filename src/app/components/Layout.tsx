@@ -12,8 +12,11 @@ function Layout() {
 
   return (
     <main
-      className="h-screen grid grid-cols-[auto_1fr_auto]"
-      style={{ backgroundColor: followArcTheme ? 'var(--arc-palette-foregroundPrimary)' : themeColor }}
+      className="h-screen grid grid-cols-[auto_1fr_auto] bg-gray-50"
+      style={{ 
+        backgroundColor: followArcTheme ? 'var(--arc-palette-foregroundPrimary)' : themeColor,
+        minHeight: '100vh'
+      }}
     >
       <Sidebar />
       <div className="px-[15px] py-3 h-full overflow-hidden">

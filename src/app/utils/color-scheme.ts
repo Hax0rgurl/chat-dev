@@ -5,11 +5,15 @@ const COLOR_SCHEME_QUERY = '(prefers-color-scheme: dark)'
 function light() {
   document.documentElement.classList.remove('dark')
   document.documentElement.classList.add('light')
+  document.documentElement.style.backgroundColor = '#ffffff'
+  document.body.style.backgroundColor = '#f8fafc'
 }
 
 function dark() {
   document.documentElement.classList.remove('light')
   document.documentElement.classList.add('dark')
+  document.documentElement.style.backgroundColor = '#191919'
+  document.body.style.backgroundColor = '#191919'
 }
 
 function isSystemDarkMode() {
